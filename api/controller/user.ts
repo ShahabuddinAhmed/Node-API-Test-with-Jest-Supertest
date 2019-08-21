@@ -1,8 +1,6 @@
-import { Request, Response } from 'express';
-
 export const getUser = (req, res) =>  {
     try {
-        res.status(200).json({
+        res.status(201).json({
             name: 'john'
         });
     } catch(error) {

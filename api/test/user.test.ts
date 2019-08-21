@@ -3,11 +3,10 @@ const request = require('supertest');
 const app = require('../../app');
 
 
-describe('GET /user', function() {
-    it('responds with json', (done) => {
-        request(app)
+describe('GET /user', () => {
+    it('responds with json', async (done) => {
+      await request(app)
         .get('/user')
-        .set('Accept', 'application/json')
         .expect(200);
         done();
     });

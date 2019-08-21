@@ -1,8 +1,8 @@
 import express from 'express';
 const app = express();
-import * as morgan from 'morgan';
-import * as bodyParser from 'body-parser';
-import * as cors from 'cors';
+import morgan from 'morgan';
+import bodyParser from 'body-parser';
+import cors from 'cors';
 
 const userRoutes = require('./api/route/user');
 
